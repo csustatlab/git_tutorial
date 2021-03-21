@@ -1,5 +1,6 @@
 set.seed(1)
 
-x <- rnorm(100, mean=2, sd=5)
+x <- rnorm(1000, mean=2, sd=5)
 
-hist(x)
+hist(x, freq=FALSE)
+lines(seq(-8, 12, by=.1), dnorm(seq(-8, 12, by=.1), mean=2, sd=5), col="red")
